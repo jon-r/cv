@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "marked": "npm:marked@^13.0.1",
+    "prettier": "npm:prettier@^3.3.2"
+  }
+}

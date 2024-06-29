@@ -13,6 +13,7 @@
 </nav>
 </header>
 
+<main>
 <section>
 I am an accomplished senior software engineer with over ten years of web development. I have worked on variety of commercial React/Typescript applications, ranging from bespoke internal dashboards to full enterprise platforms with several hundred thousand active customers. For the past 3-4 years I have also been the tech lead for mixed discipline teams of varied size and skill.
 </section>
@@ -132,3 +133,4 @@ Part of the greenfield team setting up the foundations for a new cross-product p
 |:---------|:----------|:-----------------|:------|
 
 </section>
+</main>
