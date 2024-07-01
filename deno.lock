@@ -4,6 +4,7 @@
     "specifiers": {
       "npm:marked": "npm:marked@13.0.1",
       "npm:marked@^13.0.1": "npm:marked@13.0.1",
+      "npm:prettier": "npm:prettier@3.3.2",
       "npm:prettier@^3.3.2": "npm:prettier@3.3.2"
     },
     "npm": {

@@ -14,37 +14,41 @@
 </header>
 
 <main>
-<section>
+<section class="about">
 I am an accomplished senior software engineer with over ten years of web development. I have worked on variety of commercial React/Typescript applications, ranging from bespoke internal dashboards to full enterprise platforms with several hundred thousand active customers. For the past 3-4 years I have also been the tech lead for mixed discipline teams of varied size and skill.
 </section>
 
-<section>
+<section class="skills">
 
 ## Skills
 
 - Technical Leadership (2-3 years)
-    - Mentoring & Coaching
-    - Code Reviews
-    - Agile Principles
-    - Planning & Estimates
-    - Solution & Architecture Design
+
+  - Mentoring & Coaching
+  - Code Reviews
+  - Agile Principles
+  - Planning & Estimates
+  - Solution & Architecture Design
 
 - Full Stack Development (8+ years)
-    - TypeScript (React, Node)
-    - Frontend (React, Redux, Vue, CSS, HTML)
-    - Backend (Go, C#, MongoDB, SQL, REST, GraphQL)
+
+  - TypeScript (React, Node)
+  - Frontend (React, Redux, Vue, CSS, HTML)
+  - Backend (Go, C#, MongoDB, SQL, REST, GraphQL)
 
 - CI/CD Practices (6+ Years)
-    - Version Control (Git, Jenkins, Pipelines, Branching Strategies)
-    - Quality Control (Unit Testing, Integration, Linting)
+
+  - Version Control (Git, Jenkins, Pipelines, Branching Strategies)
+  - Quality Control (Unit Testing, Integration, Linting)
 
 - DevOps & Infrastructure (3+ Years)
-    - AWS (Compute, Networking, Serverless, Database)
-    - Infrastructure as Code (CDK, Terraform)
-    - Architectural Patterns (Microservices, Event Driven, Layered)
+  - AWS (Compute, Networking, Serverless, Database)
+  - Infrastructure as Code (CDK, Terraform)
+  - Architectural Patterns (Microservices, Event Driven, Layered)
 
 </section>
-<section>
+
+<section class="employment">
 
 ## Employment
 
@@ -108,7 +112,7 @@ Part of the greenfield team setting up the foundations for a new cross-product p
 - PHP based shopping site, SQL database, vanilla JS interactivity
 
 </section>
-<section>
+<section class="education" >
 
 ## Education
 
@@ -127,7 +131,7 @@ Part of the greenfield team setting up the foundations for a new cross-product p
 
 #### _**2007 -** GCSE’s_
 
-12 A*-C grades, including:
+12 A\*-C grades, including:
 
 | Maths A* | Physics A | Graphic Design A | ICT A |
 |:---------|:----------|:-----------------|:------|

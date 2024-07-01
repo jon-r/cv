@@ -1,17 +1,17 @@
-import {marked} from 'marked';
-import prettier from 'prettier';
+import { marked } from "marked";
+import prettier from "prettier";
 
 const about = {
   title: "Jon Richards - Senior Developer / Tech Lead",
   description: "TODO",
-  favicon: "TODO"
-}
+  favicon: "assets/favicon.svg",
+};
 
-const markdown = await Deno.readTextFile('./cv.md')
+const input = ".";
+const output = "../html";
 
+const markdown = await Deno.readTextFile(`${input}/cv.md`);
 const body = marked.parse(markdown);
-
-
 
 const html = `
 <!DOCTYPE html>
@@ -21,13 +21,10 @@ const html = `
   <title>${about.title}</title>
 
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-
   <meta name="description" content="${about.description}"/>
 
-  <link rel="stylesheet" href="/assets/reset.css">
-
-  <!--    todo -->
-  <!--    <link rel="icon" href="${about.favicon}">-->
+  <link rel="stylesheet" href="assets/reset.css">
+  <link rel="icon" href="${about.favicon}">
 </head>
 <body>
 ${body}
@@ -35,7 +32,16 @@ ${body}
 </html>
 `;
 
-const formatted = await prettier.format(html, {parser: "html"});
+const formatted = await prettier.format(html, { parser: "html" });
 
-// todo look at formatting this output nicely
-Deno.writeTextFile("../index.html", formatted)
+await Deno.mkdir(`${output}/assets`, { recursive: true });
+
+// todo need better way to deal with all the css
+for await (const stylesheet of Deno.readDir(`${input}/assets`)) {
+  await Deno.copyFile(
+    `${input}/assets/${stylesheet.name}`,
+    `${output}/assets/${stylesheet.name}`,
+  );
+}
+
+Deno.writeTextFile(`${output}/index.html`, formatted);
