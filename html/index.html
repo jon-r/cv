@@ -7,10 +7,27 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="TODO" />
 
-    <link rel="stylesheet" href="assets/reset.css" />
     <link rel="icon" href="assets/favicon.svg" />
+
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link id="style_main" rel="stylesheet" href="assets/style-main.css" />
+    <link
+      id="style_red"
+      rel="stylesheet"
+      href="assets/style-red.css"
+      disabled
+    />
   </head>
   <body>
+    <label>
+      Style:
+      <select id="select_style">
+        <option value="main">Main</option>
+        <option value="red">Red</option>
+      </select>
+    </label>
+
     <header>
       <h1>Jon Richards</h1>
       <h3>Senior Web Developer / Tech Lead</h3>
@@ -260,4 +277,24 @@
       </section>
     </main>
   </body>
+
+  <script>
+    const stylesheets = {
+      main: document.querySelector("#style_main"),
+      red: document.querySelector("#style_red"),
+    };
+
+    // todo maybe add astro|alpine?
+    //  todo look at a way to not load these until enabled?
+    const select = document.getElementById("select_style");
+    select.addEventListener("change", (e) => {
+      Object.entries(stylesheets).forEach(([key, value]) => {
+        if (e.target.value === key) {
+          value.removeAttribute("disabled");
+        } else {
+          value.setAttribute("disabled", true);
+        }
+      });
+    });
+  </script>
 </html>
