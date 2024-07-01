@@ -1,13 +1,14 @@
 type AboutProps = {
-  title: string;
-  description: string;
-  favicon: string;
+    title: string;
+    description: string;
+    favicon: string;
 
-  body: string;
+    body: string;
 };
 
+// todo configure prettier to clean this up?
 function template(about: AboutProps) {
-  return `
+    return `
       <!doctype html>
       <html lang="en">
       <head>
@@ -20,12 +21,12 @@ function template(about: AboutProps) {
         <link rel="icon" href="${about.favicon}">
       
         <link rel="stylesheet" href="assets/reset.css">
+        <!-- FIXME retarget styles -->
         <link rel="stylesheet" href="assets/styles.css">
         <link id="style_main" rel="stylesheet" href="assets/style-main.css" >
         <link id="style_red" rel="stylesheet" href="assets/style-red.css" disabled>
       </head>
       <body>
-
           <label>
               Style:
             <select id="select_style">
@@ -33,8 +34,9 @@ function template(about: AboutProps) {
             <option value="red" >Red</option>
             </select>
           </label>
-      
+          <div class="page">
         ${about.body}
+        </div>
       </body>
       
       <script>

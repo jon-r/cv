@@ -22,7 +22,7 @@ I am an accomplished senior software engineer with over ten years of web develop
 
 ## Skills
 
-- Technical Leadership (2-3 years)
+- Technical Leadership _(2-3 years)_
 
   - Mentoring & Coaching
   - Code Reviews
@@ -30,18 +30,18 @@ I am an accomplished senior software engineer with over ten years of web develop
   - Planning & Estimates
   - Solution & Architecture Design
 
-- Full Stack Development (8+ years)
+- Full Stack Development _(8+ years)_
 
   - TypeScript (React, Node)
   - Frontend (React, Redux, Vue, CSS, HTML)
   - Backend (Go, C#, MongoDB, SQL, REST, GraphQL)
 
-- CI/CD Practices (6+ Years)
+- CI/CD Practices _(6+ Years)_
 
   - Version Control (Git, Jenkins, Pipelines, Branching Strategies)
   - Quality Control (Unit Testing, Integration, Linting)
 
-- DevOps & Infrastructure (3+ Years)
+- DevOps & Infrastructure _(3+ Years)_
   - AWS (Compute, Networking, Serverless, Database)
   - Infrastructure as Code (CDK, Terraform)
   - Architectural Patterns (Microservices, Event Driven, Layered)
@@ -64,7 +64,7 @@ Leading 15-20 developers on a data-visualisation product for Hitachi Energy/Rail
 - Led design & development of frontend team to present the large quantities of geospatial data in a performant, highly configurable output.
 - Directing backend team (Python, Java) to architect an extensible service that could normalise data from manual and automated entry.
 
-Mentoring 5-10 frontend developers ranging between bootcamp graduates to senior level
+Mentoring 5-10 colleagues, ranging from bootcamp graduates to senior level developers
 
 - Training to work in a professional environment.
 - Encouraging best development & delivery practices.
