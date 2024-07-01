@@ -1,5 +1,5 @@
 import {marked} from 'marked';
-import {prettier} from 'prettier';
+import prettier from 'prettier';
 
 const about = {
   title: "Jon Richards - Senior Developer / Tech Lead",
@@ -11,7 +11,7 @@ const markdown = await Deno.readTextFile('./cv.md')
 
 const body = marked.parse(markdown);
 
-const formatted = await prettier.format(body);
+
 
 const html = `
 <!DOCTYPE html>
@@ -30,10 +30,12 @@ const html = `
   <!--    <link rel="icon" href="${about.favicon}">-->
 </head>
 <body>
-${formatted}
+${body}
 </body>
 </html>
 `;
 
+const formatted = await prettier.format(html, {parser: "html"});
+
 // todo look at formatting this output nicely
-Deno.writeTextFile("../index.html", html)
+Deno.writeTextFile("../index.html", formatted)

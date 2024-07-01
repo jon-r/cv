@@ -3,11 +3,16 @@
   "packages": {
     "specifiers": {
       "npm:marked": "npm:marked@13.0.1",
-      "npm:marked@^13.0.1": "npm:marked@13.0.1"
+      "npm:marked@^13.0.1": "npm:marked@13.0.1",
+      "npm:prettier@^3.3.2": "npm:prettier@3.3.2"
     },
     "npm": {
       "marked@13.0.1": {
         "integrity": "sha512-7kBohS6GrZKvCsNXZyVVXSW7/hGBHe49ng99YPkDCckSUrrG7MSFLCexsRxptzOmyW2eT5dySh4Md1V6my52fA==",
+        "dependencies": {}
+      },
+      "prettier@3.3.2": {
+        "integrity": "sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==",
         "dependencies": {}
       }
     }
@@ -20,7 +25,8 @@
   },
   "workspace": {
     "dependencies": [
-      "npm:marked@^13.0.1"
+      "npm:marked@^13.0.1",
+      "npm:prettier@^3.3.2"
     ]
   }
 }
