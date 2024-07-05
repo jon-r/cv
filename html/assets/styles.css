@@ -1,9 +1,11 @@
 /* todo styles for print/not print */
 .page {
-    box-shadow: inset 0 0 0 1px pink;
-    max-width: 21cm;
+    box-shadow: 0 0 15px 10px silver;
     margin: 0 auto;
-    position: relative;
+
+    /* using printable dimensions, then rems in the inner styles */
+    max-width: 21cm;
+    font-size: 12pt;
 
     background-repeat: repeat-y;
     background-image: url(

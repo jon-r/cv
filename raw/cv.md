@@ -1,28 +1,29 @@
+<main>
 <header>
 
 # Jon Richards
 
-### Senior Web Developer / Tech Lead
+### _Senior Web Developer_ _Tech Lead_
 
-<nav>
+ - [**Jon.Richards**@outlook.com](mailto:jon.richards@outlook.com)
+ - [**linkedin**.com/in/**jon-r90**](https://www.linkedin.com/in/jon-r90/)
+ - [07851 411 534](tel:+447851411534)
 
-[**Jon.Richards**@outlook.com](mailto:jon.richards@outlook.com)
-[**linkedin**.com/in/**jon-r90**](https://www.linkedin.com/in/jon-r90/)
-[07851 411 534](tel:+447851411534)
-
-</nav>
 </header>
 
-<main>
 <section class="about">
-I am an accomplished senior software engineer with over ten years of web development. I have worked on variety of commercial React/Typescript applications, ranging from bespoke internal dashboards to full enterprise platforms with several hundred thousand active customers. For the past 3-4 years I have also been the tech lead for mixed discipline teams of varied size and skill.
+I am an accomplished senior software engineer with over ten years of web development. 
+
+I have worked on variety of commercial React/Typescript applications, ranging from bespoke internal dashboards to full enterprise platforms with several hundred thousand active customers. 
+
+For the past 3-4 years I have also been the tech lead for mixed discipline teams of varied size and skill.
 </section>
 
 <section class="skills">
 
 ## Skills
 
-- Technical Leadership _(2-3 years)_
+#### Technical Leadership _(2-3 years)_
 
   - Mentoring & Coaching
   - Code Reviews
@@ -30,25 +31,25 @@ I am an accomplished senior software engineer with over ten years of web develop
   - Planning & Estimates
   - Solution & Architecture Design
 
-- Full Stack Development _(8+ years)_
+#### Full Stack Development _(8+ years)_
 
   - TypeScript (React, Node)
   - Frontend (React, Redux, Vue, CSS, HTML)
   - Backend (Go, C#, MongoDB, SQL, REST, GraphQL)
 
-- CI/CD Practices _(6+ Years)_
+#### CI/CD Practices _(6+ Years)_
 
   - Version Control (Git, Jenkins, Pipelines, Branching Strategies)
   - Quality Control (Unit Testing, Integration, Linting)
 
-- DevOps & Infrastructure _(3+ Years)_
+#### DevOps & Infrastructure _(3+ Years)_
   - AWS (Compute, Networking, Serverless, Database)
   - Infrastructure as Code (CDK, Terraform)
   - Architectural Patterns (Microservices, Event Driven, Layered)
 
 </section>
 
-<section class="employment">
+<section class="jobs">
 
 ## Employment
 
@@ -56,7 +57,10 @@ I am an accomplished senior software engineer with over ten years of web develop
 
 #### _**2023-Present –** Senior Consultant (Technical Lead)_
 
-**Mentoring** | **Solution Design** | **AWS** | **React & Redux**
+ - Mentoring
+ - Solution Design 
+ - AWS
+ - React & Redux
 
 Leading 15-20 developers on a data-visualisation product for Hitachi Energy/Rail
 
@@ -75,7 +79,12 @@ I was at Sharp Gaming for over five years, working on a large-scale project to m
 
 #### _**2021-2023 -** Lead Developer (Full Stack TypeScript)_
 
-**Solution Design** | **AWS** | **React & Redux** | **Node & Express**
+- Solution Design
+- AWS
+- React & Redux
+- Node & Express
+
+[//]: # ()
 
 - Member of Centre of Excellence team, working closely with architects on how to make the most of AWS Managed services.
 - Research, design, and documentation in use of future technologies (AWS services, micro-frontends, progressive enhancement).

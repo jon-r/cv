@@ -1,3 +1,5 @@
+#!/usr/bin/env -S deno run --allow-sys --allow-read --allow-write --allow-env
+
 import { marked } from "marked";
 import prettier from "prettier";
 
@@ -17,7 +19,7 @@ async function updateHtml() {
     title: "Jon Richards - Senior Developer / Tech Lead",
     description: "TODO",
     favicon: "assets/favicon.svg",
-    body: await marked.parse(markdown),
+    body: await marked.parse(markdown, {gfm: true}),
   };
 
   // todo may need better way to deal with all the css.
