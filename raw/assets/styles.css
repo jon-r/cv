@@ -1,13 +1,12 @@
 /* todo styles for print/not print */
 .page {
-    box-shadow: 0 0 15px 10px silver;
-    margin: 0 auto;
+  box-shadow: 0 0 15px 10px silver;
+  margin: 0 auto;
 
-    /* using printable dimensions, then rems in the inner styles */
-    max-width: 21cm;
-    font-size: 12pt;
+  /* using printable dimensions, then rems in the inner styles */
+  max-width: 21cm;
+  font-size: 11pt;
 
-    background-repeat: repeat-y;
-    background-image: url(
-    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='red' width='27cm' height='30cm' %3E%3Cline x1='0' x2='100%' y1='100%' y2='100%' /%3E%3C/svg%3E%0A");
+  background-repeat: repeat-y;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='red' width='27cm' height='30cm' %3E%3Cline x1='0' x2='100%' y1='100%' y2='100%' /%3E%3C/svg%3E%0A");
 }

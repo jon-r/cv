@@ -1,10 +1,8 @@
-#!/usr/bin/env -S deno run --allow-sys --allow-read --allow-write --allow-env
-
 import { marked } from "marked";
 import prettier from "prettier";
 
 import template from "../raw/template.ts";
-import {debounce} from "./util.ts";
+import { debounce } from "./util.ts";
 
 const input = "./raw";
 const output = "./html";
@@ -12,21 +10,21 @@ const output = "./html";
 await Deno.mkdir(`${output}/assets`, { recursive: true });
 
 async function updateHtml() {
-  console.log(`[${Date.now()}] updated!`)
+  console.log(`[${Date.now()}] updated!`);
   const markdown = await Deno.readTextFile(`${input}/cv.md`);
 
   const about = {
     title: "Jon Richards - Senior Developer / Tech Lead",
     description: "TODO",
     favicon: "assets/favicon.svg",
-    body: await marked.parse(markdown, {gfm: true}),
+    body: await marked.parse(markdown, { gfm: true }),
   };
 
   // todo may need better way to deal with all the css.
   for await (const stylesheet of Deno.readDir(`${input}/assets`)) {
     await Deno.copyFile(
-        `${input}/assets/${stylesheet.name}`,
-        `${output}/assets/${stylesheet.name}`,
+      `${input}/assets/${stylesheet.name}`,
+      `${output}/assets/${stylesheet.name}`,
     );
   }
 
@@ -36,8 +34,8 @@ async function updateHtml() {
 
 const debouncedUpdateHtml = debounce(updateHtml, 300);
 
-console.log('watching...')
-await updateHtml()
+console.log("watching...");
+await updateHtml();
 
 const templateWatcher = Deno.watchFs(`${input}/`);
 for await (const _event of templateWatcher) {

@@ -1,33 +1,32 @@
 type Callback = (...args: unknown[]) => void;
 
-
 type DebouncedCallback = Callback & {
-    cancel?: () => void;
-}
+  cancel?: () => void;
+};
 
-interface DebounceOptions {
-    leading?: boolean;
+type DebounceOptions = {
+  leading?: boolean;
 }
 
 // https://youmightnotneed.com/lodash/
 export function debounce(
-    func: Callback,
-    delay: number,
-    { leading }: DebounceOptions = {},
+  func: Callback,
+  delay: number,
+  { leading }: DebounceOptions = {},
 ): DebouncedCallback {
-    let timerId: number | undefined;
+  let timerId: number | undefined;
 
-    const debounced = (...args: unknown[]) => {
-        if (!timerId && leading) {
-            func(...args);
-        }
+  const debounced = (...args: unknown[]) => {
+    if (!timerId && leading) {
+      func(...args);
+    }
 
-        clearTimeout(timerId);
+    clearTimeout(timerId);
 
-        timerId = setTimeout(() => func(...args), delay);
-    };
+    timerId = setTimeout(() => func(...args), delay);
+  };
 
-    debounced.cancel = () => clearTimeout(timerId);
+  debounced.cancel = () => clearTimeout(timerId);
 
-    return debounced;
+  return debounced;
 }

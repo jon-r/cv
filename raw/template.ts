@@ -1,14 +1,14 @@
 type AboutProps = {
-    title: string;
-    description: string;
-    favicon: string;
+  title: string;
+  description: string;
+  favicon: string;
 
-    body: string;
+  body: string;
 };
 
 // todo configure prettier to clean this up?
 function template(about: AboutProps) {
-    return `
+  return `
       <!doctype html>
       <html lang="en">
       <head>

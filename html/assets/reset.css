@@ -29,10 +29,10 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
+/*ul[role="list"],
 ol[role="list"] {
   list-style: none;
-}
+}*/
 
 /* Set core body defaults */
 body {
@@ -73,20 +73,20 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input,
+/*input,
 button,
 textarea,
 select {
   font-family: inherit;
   font-size: inherit;
-}
+}*/
 
 /* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
+/*textarea:not([rows]) {
   min-height: 10em;
-}
+}*/
 
 /* Anything that has been anchored to should have extra scroll margin */
-:target {
+/*:target {
   scroll-margin-block: 5ex;
-}
+}*/

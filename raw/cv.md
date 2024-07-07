@@ -23,7 +23,10 @@ For the past 3-4 years I have also been the tech lead for mixed discipline teams
 
 ## Skills
 
-#### Technical Leadership _(2-3 years)_
+<details>
+<summary>
+Technical Leadership <em>(2-3 years)</em>
+</summary>
 
   - Mentoring & Coaching
   - Code Reviews
@@ -31,21 +34,67 @@ For the past 3-4 years I have also been the tech lead for mixed discipline teams
   - Planning & Estimates
   - Solution & Architecture Design
 
-#### Full Stack Development _(8+ years)_
+</details>
 
-  - TypeScript (React, Node)
-  - Frontend (React, Redux, Vue, CSS, HTML)
-  - Backend (Go, C#, MongoDB, SQL, REST, GraphQL)
+<details>
+<summary>
+Frontend Development <em>(8+ years)</em>
+</summary>
 
-#### CI/CD Practices _(6+ Years)_
+  - Javascript 
+    - TypeScript
+    - React 18+, Redux
+    - Vue 3+, Pinia
+  - CSS, HTML
+  - Accessibility
 
-  - Version Control (Git, Jenkins, Pipelines, Branching Strategies)
-  - Quality Control (Unit Testing, Integration, Linting)
+</details>
 
-#### DevOps & Infrastructure _(3+ Years)_
-  - AWS (Compute, Networking, Serverless, Database)
-  - Infrastructure as Code (CDK, Terraform)
-  - Architectural Patterns (Microservices, Event Driven, Layered)
+<details>
+<summary>
+Backend Development <em>(2-4 years)</em>
+</summary>
+
+- Go, C#, Java
+- MongoDB, SQL,
+- REST, GraphQL, Swagger
+
+</details>
+
+<details>
+<summary>
+CI/CD Practices <em>(6+ Years)</em>
+</summary>
+
+  - Version Control 
+    - Git
+    - Jenkins
+    - Bitbucket/Github Pipelines
+    - Branching Strategies
+  - Quality Control 
+    - Unit/Integration Testing
+    - Linting, SonarQube
+
+</details>
+
+<details>
+<summary>
+DevOps & Infrastructure <em>(3+ Years)</em>
+</summary>
+
+  - AWS 
+    - Compute (Lambdas, EC2, Elastic Beanstalk, etc)
+    - Serverless (DynamoDB, ApiGateway, SQS, S3, etc) 
+    - Networking (Route53, Cloudfront)
+  - Infrastructure as Code 
+    - CDK, CloudFormation
+    - Terraform
+  - Architectural Patterns 
+    - Microservices
+    - Event Driven
+    - Layered/Clean
+
+</details>
 
 </section>
 
@@ -53,14 +102,11 @@ For the past 3-4 years I have also been the tech lead for mixed discipline teams
 
 ## Employment
 
-### GlobalLogic (Hitachi) - Digital Consultancy
+### [GlobalLogic (Hitachi)](https://www.globallogic.com/) - Digital Consultancy
 
 #### _**2023-Present –** Senior Consultant (Technical Lead)_
 
- - Mentoring
- - Solution Design 
- - AWS
- - React & Redux
+_Solution Design | AWS | React & Redux | Mentoring_
 
 Leading 15-20 developers on a data-visualisation product for Hitachi Energy/Rail
 
@@ -73,18 +119,13 @@ Mentoring 5-10 colleagues, ranging from bootcamp graduates to senior level devel
 - Training to work in a professional environment.
 - Encouraging best development & delivery practices.
 
-### Sharp Gaming (Betfred) – Enterprise Betting & Gaming Platform
+### [Sharp Gaming (Betfred)](https://www.betfred.com/) – Enterprise Betting & Gaming Platform
 
 I was at Sharp Gaming for over five years, working on a large-scale project to migrate the Betfred Website to be fully in-house. Now fully migrated, Betfred maintains tens of thousands of daily customers and a multi-million-pound weekly turnover.
 
 #### _**2021-2023 -** Lead Developer (Full Stack TypeScript)_
 
-- Solution Design
-- AWS
-- React & Redux
-- Node & Express
-
-[//]: # ()
+_Solution Design | AWS | React & Redux | Node & Express_
 
 - Member of Centre of Excellence team, working closely with architects on how to make the most of AWS Managed services.
 - Research, design, and documentation in use of future technologies (AWS services, micro-frontends, progressive enhancement).
