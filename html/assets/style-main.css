@@ -3,6 +3,7 @@
 main {
   position: relative;
   font-family: "Raleway", sans-serif;
+  font-size: 11pt;
   word-spacing: 0.1rem;
   display: grid;
   grid-template-columns: repeat(8, minmax(0, 1fr));
@@ -13,7 +14,7 @@ main {
     display: block;
     position: absolute;
     inset: 0 auto 0 0;
-    width: 6rem;
+    width: calc(12.5% - 0.25rem);
     background-color: var(--bg-lite);
     z-index: -1;
   }

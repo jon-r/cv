@@ -29,7 +29,7 @@ function template(about: AboutProps) {
     />
   </head>
   <body>
-    <label>
+    <label class="style-select">
       Style:
       <select id="select_style">
         <option value="main">Main</option>

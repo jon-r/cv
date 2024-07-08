@@ -116,7 +116,5 @@ Management, Payments).
 - A Levels – Maths A, Physics B, Graphics C.
 - GCSE’s – 12 A\*-C grades including Maths A*, ICT A.
 
-<div class="page-break" role="presentation" ></div>
-
 </section>
 </main>
