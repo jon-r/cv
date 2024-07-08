@@ -21,10 +21,6 @@ h2 {
   letter-spacing: 0.1rem;
 }
 
-ul {
-  padding-left: var(--inner-margin);
-}
-
 a {
   cursor: pointer;
 }
@@ -36,7 +32,8 @@ a:not(:hover) {
 header {
   grid-column: 1 / span 2;
   background-color: var(--bg);
-  padding: 2rem var(--inner-margin) var(--inner-margin) var(--page-margin);
+  padding: var(--inner-margin) var(--page-margin);
+  /*padding: 2rem var(--inner-margin) var(--inner-margin) var(--page-margin);*/
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -56,6 +53,11 @@ header {
   }
 }
 
+/*.sidebar {*/
+/*  grid-column: 1 / span 2;*/
+/*  height: 50px;*/
+/*}*/
+
 .contact {
   grid-column: 3 / span 6;
   font-size: 0.8rem;
@@ -63,7 +65,7 @@ header {
 
   & ul {
     list-style: none;
-    margin: 0;
+    /*margin: 0;*/
     padding-top: var(--page-margin);
     padding-right: var(--page-margin);
   }
@@ -75,26 +77,20 @@ header {
 
 .about, .education, .skills, .jobs {
   grid-column: 2 / span 7;
-  padding: var(--inner-margin) 0;
 
-  & p, & h3, & h4 {
-    padding: 0 var(--page-margin) 0 0;
+  & > * {
+    padding-right: var(--page-margin);
   }
 
   & h2 {
     background-color: var(--bg);
-    padding: 0.5rem var(--page-margin) 0.5rem 2rem;
-    margin: 0 0 0 -2rem;
+    padding: 0.5rem 2rem;
+    margin-left: -2rem;
   }
 
   & h3 {
     font-size: 1.3rem;
-
-    & > * {
-      margin-top: 0.25rem;
-    }
   }
-
 
   & h4 {
     font-size: 0.8rem;
@@ -109,10 +105,6 @@ header {
       margin-left: -1rem;
     }
   }
-
-  & ul {
-    padding-right: var(--page-margin);
-  }
 }
 
 .skills {
@@ -121,8 +113,8 @@ header {
   }
 
   & li {
-    font-size: 0.7rem;
-    line-height: 1.7;
+    font-size: 0.8rem;
+    line-height: 1.8;
 
     & strong {
       font-size: 1.1rem;
@@ -135,11 +127,14 @@ header {
     font-weight: 300;
     font-style: italic;
     font-size: 0.8rem;
-    padding-bottom: 0.2rem;
+    line-height: 1.8;
   }
 }
 
 /* todo use nth type if more. also wrap in print meda query */
-.page-break {
+.jobs .page-break {
+  height: 5rem;
+}
+.education .page-break {
   height: 10rem;
 }

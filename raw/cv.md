@@ -7,6 +7,8 @@
 
 </header>
 
+<div class="sidebar" role="presentation" ></div>
+
 <section class="contact">
 
  - [**Jon.Richards**@outlook.com](mailto:jon.richards@outlook.com)
@@ -28,9 +30,9 @@
 ## Skills
 
  - **Technical Leadership – 2-3 years,**
-   Mentoring, Code Reviews, Agile Training, Solution Design
- - **Frontend Development 8+ years,** 
-   Typescript, React, Redux, Vue, Vite, Webpack, HTML, CSS
+   Mentoring, Agile Training, Solution Design
+ - **Frontend Development – 8+ years,** 
+   Typescript, React, Redux, Vue, Vite, Webpack, HTML
  - **Backend Development – 2-4 years,**
    Node.js, Go, C#, MongoDB, SQL, REST, GraphQL
  - **AWS Cloud – 4-5 years,**
@@ -53,9 +55,9 @@
 
 Leading 15-20 developers to present the geospatial data in a performant, highly customisable output.
 
-- Led solution design & development across the application
-- Guiding frontend team to build a clean, scalable React Application
-- Directing backend team (Python, Java) to optimise API performance
+- Led solution design & development across the product.
+- Guiding frontend team to build a clean, scalable React application.
+- Directing backend team (Python, Java) to optimise API performance.
 - Normalising data from manual and automated entry.
 
 Mentoring 5-10 typescript developers, ranging from bootcamp graduates to senior engineers.
@@ -63,7 +65,7 @@ Mentoring 5-10 typescript developers, ranging from bootcamp graduates to senior 
 - Training to work in a professional environment.
 - Encouraging best development & delivery practices.
 
-<div class="page-break" ></div>
+<div class="page-break" role="presentation"></div>
 
 ### [Sharp Gaming (Betfred)](https://www.betfred.com/) – Enterprise Gambling Platform
 
@@ -82,17 +84,17 @@ Member of the Centre of Excellence team, working closely with enterprise archite
 
 A senior member of the games team, producing a service stack suitable for multiple gaming product requirements (Slots, Live Casino, Jackpots, Bingo).
 
-- Complex gambling integrations with bespoke content management, 3rd party APIs, UKGC compliance, Responsible Gambling, KYC
+- Complex gambling integrations with bespoke content management, 3rd party APIs, UKGC compliance, Responsible Gambling, KYC.
 - Custom CMS focused on games content – MongoDB, Express, React, Node (MERN stack).
 - Frontend games integrations – React, Redux, REST, UKGC Compliance.
 
 #### **2017-2019 – Web Developer**
 
-Part of the greenfield team setting up the foundations for a new cross-product platform (Gaming, Sportsbook, Account Management, Payments)
+Part of the greenfield team setting up the foundations for a new cross-product platform (Gaming, Sportsbook, Account Management, Payments).
 
-- Future-proof React architecture
+- Future-proof React architecture.
 - Server-Side React app (custom Express based SSR app).
-- WebSocket for real-time event odds, and Node/SQL data driven sportsbook
+- WebSocket for real-time event odds, and Node/SQL data driven sportsbook.
 
 </section>
 <section class="education" >
@@ -101,12 +103,14 @@ Part of the greenfield team setting up the foundations for a new cross-product p
 
 ### University of Bolton
 
-- 3D Games Art – Bachelor of Arts (Hons) First Class
+- 3D Games Art – Bachelor of Arts (Hons) First Class.
 
 ### Bay House Secondary School & Sixth Form, Gosport
 
-- A Levels – Maths A, Physics B, Graphics C
-- GCSE’s – 12 A\*-C grades including Maths A*, ICT A
+- A Levels – Maths A, Physics B, Graphics C.
+- GCSE’s – 12 A\*-C grades including Maths A*, ICT A.
+
+<div class="page-break" role="presentation" ></div>
 
 </section>
 </main>

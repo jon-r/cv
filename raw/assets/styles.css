@@ -1,7 +1,7 @@
 /* todo styles for print/not print */
 .page {
   box-shadow: 0 0 15px 10px silver;
-  margin: 0 auto;
+  margin: 2rem auto;
 
   /* using printable dimensions, then rems in the inner styles */
   max-width: 21cm;
