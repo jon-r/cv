@@ -6,7 +6,7 @@ type DebouncedCallback = Callback & {
 
 type DebounceOptions = {
   leading?: boolean;
-}
+};
 
 // https://youmightnotneed.com/lodash/
 export function debounce(
