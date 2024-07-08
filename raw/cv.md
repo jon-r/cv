@@ -16,25 +16,29 @@
 </section>
 <section class="about">
 
-I am a proficient senior software engineer with over ten years of web development experience. I have worked professionally on variety of commercial applications, ranging from bespoke internal dashboards to full enterprise platforms with several hundred thousand customers. For the past 3-4 years I have also been the tech lead for mixed discipline teams.
+**I am a proficient software engineer with over ten years of web development experience.** 
+
+**I have worked professionally on variety of commercial applications, ranging from bespoke internal dashboards to full enterprise platforms with several hundred thousand customers.** 
+
+**For the past 3-4 years I have also been the tech lead for mixed discipline teams.**
 
 </section>
 <section class="skills">
 
 ## Skills
 
- - **Technical Leadership – 2-3 years** 
-   Mentoring, Agile Training, Solution Design
- - **CI/CD Practices – 6+ years** 
+ - **Technical Leadership – 2-3 years,**
+   Mentoring, Code Reviews, Agile Training, Solution Design
+ - **Frontend Development 8+ years,** 
+   Typescript, React, Redux, Vue, Vite, Webpack, HTML, CSS
+ - **Backend Development – 2-4 years,**
+   Node.js, Go, C#, MongoDB, SQL, REST, GraphQL
+ - **AWS Cloud – 4-5 years,**
+   Lambdas, EC2, DynamoDB, CodePipeline, Serverless Applications
+ - **CI/CD Practices – 6+ years,** 
    Version Control, Unit/Integration Testing, Pipelines, SonarQube
- - **Frontend Development 8+ years** 
-   Typescript, React, Vue, Vite, Webpack
- - **Backend Development – 2-4 years**
-   Node.js, Go, C#, MongoDB, REST, GraphQL
- - **DevOps & Infrastructure – 3+ years** 
+ - **DevOps & Infrastructure – 3+ years,** 
    CDK, Terraform, Architectural Patterns
- - **AWS Cloud – 4-5 years**
-   Lambdas, DynamoDB, Serverless Computing
 
 </section>
 <section class="jobs">
@@ -43,9 +47,11 @@ I am a proficient senior software engineer with over ten years of web developmen
 
 ### [GlobalLogic (Hitachi)](https://www.globallogic.com/) – Digital Consultancy
 
-Leading 15-20 on a data-visualisation product for Hitachi Energy/Rail. Handling large scale geospatial data from a variety of sources (power, healthcare, rail, demographics) and presenting it in a performant, highly configurable output 
+**Working on a data-visualisation product for Hitachi Energy/Rail. Handling thousands of points of geospatial data from a variety of sources (power, healthcare, rail, demographics) and presenting it in a performant, highly configurable output.**
 
 #### **2023-Present – Technical Lead**
+
+Leading 15-20 developers to present the geospatial data in a performant, highly customisable output.
 
 - Led solution design & development across the application
 - Guiding frontend team to build a clean, scalable React Application
@@ -61,7 +67,7 @@ Mentoring 5-10 typescript developers, ranging from bootcamp graduates to senior 
 
 ### [Sharp Gaming (Betfred)](https://www.betfred.com/) – Enterprise Gambling Platform
 
-Working on a large-scale project to migrate the Betfred Website to be fully in-house. Now fully migrated, Betfred maintains tens of thousands of daily customers with a multi-million-pound weekly turnover.
+**Working on a large-scale migration project bringing the Betfred digital system fully in-house. Now fully migrated, Betfred maintains tens of thousands of daily customers with a multi-million-pound weekly turnover.**
 
 #### **2021-2023 – Lead Developer**
 
@@ -88,16 +94,6 @@ Part of the greenfield team setting up the foundations for a new cross-product p
 - Server-Side React app (custom Express based SSR app).
 - WebSocket for real-time event odds, and Node/SQL data driven sportsbook
 
-### Minerva Creative – Design Agency
-
-- **2016-2017 – Senior Web Developer**
-- WordPress microsites, vanilla JS interactivity
-
-### Red Hot Chilli Northwest – Commercial Appliance Retailer
-
-- **2012-2016 – Marketing Lead / Web Developer**
-- PHP based shopping site, SQL database, vanilla JS interactivity
-
 </section>
 <section class="education" >
 
@@ -105,12 +101,12 @@ Part of the greenfield team setting up the foundations for a new cross-product p
 
 ### University of Bolton
 
-- **2012 – 3D Games Art** Bachelor of Arts (Hons) First Class**
+- 3D Games Art – Bachelor of Arts (Hons) First Class
 
 ### Bay House Secondary School & Sixth Form, Gosport
 
-- **2009 – A Levels** Maths A, Physics B, Graphics C
-- **2007 – GCSE’s** 12 A\*-C grades including Maths A*, ICT A
+- A Levels – Maths A, Physics B, Graphics C
+- GCSE’s – 12 A\*-C grades including Maths A*, ICT A
 
 </section>
 </main>
