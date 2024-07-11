@@ -28,18 +28,18 @@ enterprise platforms with several hundred thousand customers.**
 
 ## Skills
 
-- **Technical Leadership – 2-3 years,**
-  Mentoring, Agile Training, Solution Design.
-- **Frontend Development – 8+ years,**
-  Typescript, React, Redux, Vue, Vite, Webpack, HTML.
+- **Technical Leadership – 3-4 years,**
+  Mentoring, Agile Training, Solution Design
+- **Frontend Development – 10+ years,**
+  Typescript, React, Redux, Vue, Vite, Webpack, HTML
 - **Backend Development – 2-4 years,**
-  Node.js, Go, C#, MongoDB, SQL, REST, GraphQL.
+  Node.js, Go, C#, MongoDB, SQL, REST, GraphQL
 - **AWS Cloud – 4-5 years,**
-  Lambdas, EC2, DynamoDB, CodePipeline, Serverless Applications.
+  Lambdas, EC2, DynamoDB, CodePipeline, Serverless Applications
 - **CI/CD Practices – 6+ years,**
-  Version Control, Unit/Integration Testing, Pipelines, SonarQube.
+  Version Control, Unit/Integration Testing, Pipelines, SonarQube
 - **DevOps & Infrastructure – 3+ years,**
-  CDK, Terraform, Architectural Patterns.
+  CDK, Terraform, Architectural Patterns
 
 </section>
 <section class="jobs">
