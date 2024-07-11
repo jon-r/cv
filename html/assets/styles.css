@@ -2,9 +2,8 @@
 
 @media screen {
   .page {
-    box-shadow:
-            0 0 5px #ddd;
-            /*inset 0 0 0 1cm rgb(146 223 111 / 10%);*/
+    box-shadow: 0 0 5px #ddd;
+    /*inset 0 0 0 1cm rgb(146 223 111 / 10%);*/
     margin: auto;
 
     /* using printable dimensions, then rems in the inner styles */
@@ -20,8 +19,13 @@
   /*}*/
 
   @keyframes confetti {
-    92% {opacity: 1}
-    100% {opacity: 0; transform: none;}
+    92% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: none;
+    }
   }
 
   .jazzy {
@@ -39,12 +43,24 @@
     animation: confetti 0.5s ease-out 1 reverse both;
     background-color: orange;
 
-    &:nth-of-type(1) {transform: translate(0px, -90px) scale(0);}
-    &:nth-of-type(2) {transform: translate(78px, -45px) scale(0)}
-    &:nth-of-type(3) {transform: translate(78px, 45px) scale(0)}
-    &:nth-of-type(4) {transform: translate(0px, 90px) scale(0)}
-    &:nth-of-type(5) {transform: translate(-78px, 45px) scale(0)}
-    &:nth-of-type(6) {transform: translate(-78px, -45px) scale(0)}
+    &:nth-of-type(1) {
+      transform: translate(0px, -90px) scale(0);
+    }
+    &:nth-of-type(2) {
+      transform: translate(78px, -45px) scale(0);
+    }
+    &:nth-of-type(3) {
+      transform: translate(78px, 45px) scale(0);
+    }
+    &:nth-of-type(4) {
+      transform: translate(0px, 90px) scale(0);
+    }
+    &:nth-of-type(5) {
+      transform: translate(-78px, 45px) scale(0);
+    }
+    &:nth-of-type(6) {
+      transform: translate(-78px, -45px) scale(0);
+    }
   }
 }
 
@@ -62,4 +78,3 @@
     margin: 0 !important;
   }
 }
-
