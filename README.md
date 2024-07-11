@@ -115,8 +115,10 @@ Management, Payment System).
 
 ## Education
 
-- **University of Bolton – 3D Games Art,** Bachelor of Arts (Hons) First Class
-- **Bay House College – A Levels,** Maths A, Physics B, Graphics C
+- **University of Bolton – 3D Games Art,**
+  Bachelor of Arts (Hons) First Class
+- **Bay House College – A Levels,**
+  Maths A, Physics B, Graphics C
 
 </section>
 

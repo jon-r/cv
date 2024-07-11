@@ -48,9 +48,6 @@ header {
   grid-column: 1;
   background-color: var(--bg);
   padding: var(--page-margin);
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: space-between;*/
   height: 10rem;
   width: 10rem;
 
