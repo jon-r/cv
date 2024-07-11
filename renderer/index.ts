@@ -29,6 +29,8 @@ async function updateHtml() {
   }
 
   const formatted = await prettier.format(template(about), { parser: "html" });
+
+  await Deno.writeTextFile(`./README.md`, markdown);
   await Deno.writeTextFile(`${output}/index.html`, formatted);
 }
 

@@ -4,26 +4,27 @@ main {
   position: relative;
   font-family: "Raleway", sans-serif;
   font-size: 11pt;
-  word-spacing: 0.1rem;
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: 5rem 1fr;
+  grid-row-gap: 0.5rem;
   grid-auto-flow: column;
 
   &::after {
     content: "";
     display: block;
     position: absolute;
-    inset: 0 auto 0 0;
-    width: calc(12.5% - 0.25rem);
+    top: 0;
+    left: 0;
+    height: 59cm;
+    width: 4.75rem;
     background-color: var(--bg-lite);
     z-index: -1;
   }
 
   --bg-lite: #f0f8ff;
   --bg: #d4e5f6;
-  --emphasis: #0a497c;
-  --page-margin: 2rem;
-  --inner-margin: 1rem;
+  --emphasis: #06599e;
+  --page-margin: 1cm;
 }
 
 h1,
@@ -31,6 +32,8 @@ h2 {
   text-transform: uppercase;
   font-weight: 200;
   letter-spacing: 0.1rem;
+  color: var(--emphasis);
+  line-height: 1;
 }
 
 a {
@@ -42,24 +45,24 @@ a:not(:hover) {
 }
 
 header {
-  grid-column: 1 / span 2;
+  grid-column: 1;
   background-color: var(--bg);
   padding: var(--page-margin);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 190px;
-  width: 190px;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
+  height: 10rem;
+  width: 10rem;
 
   & h1 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     white-space: nowrap;
-    color: var(--emphasis);
     margin: 0;
   }
 
   & h3 {
-    font-size: 1.5rem;
+    margin-top: 0;
+    font-size: 1.25rem;
   }
 
   & em {
@@ -68,9 +71,8 @@ header {
 }
 
 .contact {
-  grid-column: 3 / span 6;
+  grid-column: 2;
   font-size: 0.8rem;
-  line-height: 1.8;
   text-align: right;
 
   & ul {
@@ -88,8 +90,9 @@ header {
 .about,
 .education,
 .skills,
-.jobs {
-  grid-column: 2 / span 7;
+.jobs,
+.interests {
+  grid-column: 2;
 
   & > * {
     padding-right: var(--page-margin);
@@ -103,6 +106,10 @@ header {
 
   & h3 {
     font-size: 1.3rem;
+
+    & + p {
+      margin-top: 0.75rem;
+    }
   }
 
   & h4 {
@@ -111,19 +118,23 @@ header {
     font-weight: 300;
     font-variant-numeric: lining-nums;
     background-color: var(--bg);
-    padding: 0.25rem 1.5rem;
+    padding: 0.125rem 1.5rem;
     margin-left: -1.5rem;
   }
 
   & ul {
-    padding-left: 0;
     list-style-type: square;
+    margin-bottom: 0;
+    padding-left: 1rem;
   }
 
   & li {
     font-weight: 300;
     font-size: 0.8rem;
-    line-height: 1.8;
+
+    & strong {
+      font-size: 1.1rem;
+    }
 
     &::marker {
       color: var(--emphasis);
@@ -131,26 +142,9 @@ header {
   }
 }
 
-.skills {
-  & ul {
-    margin-bottom: 0;
-  }
-
-  & li strong {
-    font-size: 1.1rem;
-  }
-}
-
-.jobs,
-.education {
-  & li {
-    font-style: italic;
-  }
-}
-
 /* todo wrap in print meda query */
 .jobs .page-break {
-  height: 4rem;
+  height: 3rem;
 }
 .education .page-break {
   height: 10rem;
