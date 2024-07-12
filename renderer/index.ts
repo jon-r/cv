@@ -2,16 +2,16 @@ import { marked } from "marked";
 import prettier from "prettier";
 
 import template from "../raw/template.ts";
-import { debounce } from "./util.ts";
+import { getGitHash } from "./util.ts";
 
-const input = "./raw";
-const output = "./html";
+export const INPUT_PATH = "./raw";
+export const OUTPUT_PATH = "./html";
 
-await Deno.mkdir(`${output}/assets`, { recursive: true });
+await Deno.mkdir(`${OUTPUT_PATH}/assets`, { recursive: true });
 
-async function updateHtml() {
+export async function updateHtml(version?: string) {
   console.log(`[${Date.now()}] updated!`);
-  const markdown = await Deno.readTextFile(`${input}/cv.md`);
+  const markdown = await Deno.readTextFile(`${INPUT_PATH}/cv.md`);
 
   const about = {
     title: "Jon Richards - Senior Developer / Tech Lead",
@@ -21,25 +21,20 @@ async function updateHtml() {
   };
 
   // todo may need better way to deal with all the css.
-  for await (const stylesheet of Deno.readDir(`${input}/assets`)) {
+  for await (const stylesheet of Deno.readDir(`${INPUT_PATH}/assets`)) {
     await Deno.copyFile(
-      `${input}/assets/${stylesheet.name}`,
-      `${output}/assets/${stylesheet.name}`,
+      `${INPUT_PATH}/assets/${stylesheet.name}`,
+      `${OUTPUT_PATH}/assets/${stylesheet.name}`,
     );
   }
 
-  const formatted = await prettier.format(template(about), { parser: "html" });
+  const html = template(about, version || String(Date.now()));
+  const formatted = await prettier.format(html, { parser: "html" });
 
   await Deno.writeTextFile(`./README.md`, markdown);
-  await Deno.writeTextFile(`${output}/index.html`, formatted);
+  await Deno.writeTextFile(`${OUTPUT_PATH}/index.html`, formatted);
 }
 
-const debouncedUpdateHtml = debounce(updateHtml, 300);
+const version = (await getGitHash()).substring(0, 8);
 
-console.log("watching...");
-await updateHtml();
-
-const templateWatcher = Deno.watchFs(`${input}/`);
-for await (const _event of templateWatcher) {
-  debouncedUpdateHtml();
-}
+await updateHtml(version);

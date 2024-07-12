@@ -17,51 +17,6 @@
   /*  display: none;*/
   /*  visibility: hidden;*/
   /*}*/
-
-  @keyframes confetti {
-    92% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      transform: none;
-    }
-  }
-
-  .jazzy {
-    position: relative;
-  }
-  .particle {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: 2rem;
-    width: 16px;
-    height: 16px;
-    transform-origin: center;
-    border-radius: 100%;
-
-    animation: confetti 0.5s ease-out 1 reverse both;
-    background-color: orange;
-
-    &:nth-of-type(1) {
-      transform: translate(0px, -90px) scale(0);
-    }
-    &:nth-of-type(2) {
-      transform: translate(78px, -45px) scale(0);
-    }
-    &:nth-of-type(3) {
-      transform: translate(78px, 45px) scale(0);
-    }
-    &:nth-of-type(4) {
-      transform: translate(0px, 90px) scale(0);
-    }
-    &:nth-of-type(5) {
-      transform: translate(-78px, 45px) scale(0);
-    }
-    &:nth-of-type(6) {
-      transform: translate(-78px, -45px) scale(0);
-    }
-  }
 }
 
 @media print {
