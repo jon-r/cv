@@ -1,7 +1,6 @@
 type AboutProps = {
   title: string;
   description: string;
-  favicon: string;
   body: string;
 };
 
@@ -15,7 +14,7 @@ function template(about: AboutProps, version: string): string {
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="${about.description}" />
 
-    <link rel="icon" href="${about.favicon}" />
+    <link rel="icon" href="assets/favicon.svg?v=${version}" />
 
     <link rel="stylesheet" href="assets/reset.css?v=${version}" />
     <link rel="stylesheet" href="assets/styles.css?v=${version}" />
