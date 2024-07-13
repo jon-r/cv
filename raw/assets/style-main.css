@@ -6,7 +6,6 @@ main {
   font-size: 11pt;
   display: grid;
   grid-template-columns: 5rem 1fr;
-  grid-row-gap: 0.5rem;
   grid-auto-flow: column;
 
   &::after {
@@ -87,8 +86,7 @@ header {
 .about,
 .education,
 .skills,
-.jobs,
-.interests {
+.jobs {
   grid-column: 2;
 
   & > * {
@@ -103,10 +101,6 @@ header {
 
   & h3 {
     font-size: 1.3rem;
-
-    & + p {
-      margin-top: 0.75rem;
-    }
   }
 
   & h4 {
@@ -123,6 +117,10 @@ header {
     list-style-type: square;
     margin-bottom: 0;
     padding-left: 1rem;
+
+    p + & {
+      margin-top: 0.25rem;
+    }
   }
 
   & li {
@@ -141,7 +139,7 @@ header {
 
 /* todo wrap in print meda query */
 .jobs .page-break {
-  height: 3rem;
+  height: 5rem;
 }
 .education .page-break {
   height: 10rem;

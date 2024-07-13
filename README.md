@@ -18,14 +18,15 @@
 
 <section class="about">
 
-I am a proficient and enthusiastic software engineer with many years of hands-on web development experience. I am
-self-taught, proactive, and always willing to learn new things.
+Accomplished and enthusiastic software engineer with over ten years of hands-on development experience. As a
+self-taught developer, I am proactive, adaptable and always ready to learn.
 
-I have worked professionally on a variety of commercial applications, ranging from bespoke internal dashboards to full
-enterprise platforms serving several hundred thousand active customers.
+My experience includes contributing to a variety of commercial applications; from bespoke internal dashboards to full
+enterprise platforms that served hundreds of thousands of active customers.
 
-For the last few years, I have also been the tech lead for mixed discipline teams. I like to create an enjoyable working
-environment for my colleagues, lead by example, and encourage others to work to the best of their ability.
+Most recently my work has included being the tech lead for mixed discipline teams. I’ve enjoyed both the challenge of
+handling multiple tech operations as well as the mentoring of my junior colleagues. Positive and social team culture is
+important to me, I like to be in office where possible and I enjoy taking part in socials.
 
 </section>
 
@@ -119,17 +120,6 @@ Management, Payment System).
   Bachelor of Arts (Hons) First Class
 - **Bay House College – A Levels,**
   Maths A, Physics B, Graphics C
-
-</section>
-
-<section class="interests">
-
-## Interests
-
-I enjoy the social side of working with a team, inside and out of working hours. I regularly attend office game nights
-and quizzes organised with other colleagues. I am an advocate of working in-person rather than fully remote.
-
-
 
 </section>
 

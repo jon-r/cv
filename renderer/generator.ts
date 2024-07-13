@@ -1,7 +1,6 @@
 import { marked } from "marked";
 import prettier from "prettier";
 
-import template from "../raw/template.ts";
 import { getGitHash } from "./util.ts";
 
 export const INPUT_PATH = "./raw";
@@ -10,9 +9,11 @@ export const OUTPUT_PATH = "./html";
 async function generateWebpage(markdown: string, version: string = String(Date.now())): Promise<string> {
   const about = {
     title: "Jon Richards - Senior Developer / Tech Lead",
-    description: "TODO", // FIXME
+    description: "CV for Jon Richards",
     body: await marked.parse(markdown, { gfm: true }),
   };
+
+  const template = (await import('../raw/template.ts')).default;
 
   return template(about, version);
 }
