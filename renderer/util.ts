@@ -36,11 +36,11 @@ export async function getGitHash(): Promise<string> {
     args: ["rev-parse", "HEAD"],
   });
 
-  const { code, stdout, stderr } = await cmd.output();
+  const { stdout, stderr } = await cmd.output();
 
-  console.log(code === 0);
-  console.log(new TextDecoder().decode(stdout));
-  console.log(new TextDecoder().decode(stderr));
+  if (stderr.length > 0) {
+    throw new Error(new TextDecoder().decode(stderr));
+  }
 
-  return new TextDecoder().decode((await cmd.output()).stdout);
+  return new TextDecoder().decode(stdout);
 }
