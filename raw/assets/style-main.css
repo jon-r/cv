@@ -7,6 +7,8 @@ main {
   display: grid;
   grid-template-columns: 5rem 1fr;
   grid-auto-flow: column;
+  padding-bottom: 2rem;
+  overflow: hidden;
 
   &::after {
     content: "";
