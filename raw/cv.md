@@ -120,6 +120,18 @@ Management, Payment System).
   Bachelor of Arts (Hons) First Class
 - **Bay House College – A Levels,**
   Maths A, Physics B, Graphics C
+- **Bay House Secondary School – GCSE's,**
+  12 A*-C grades including Maths A*, ICT A, Physics A
+
+</section>
+
+<section class="interests">
+
+## Interests
+
+In my free time I enjoy playing board and card games with friends. I like to keep in touch with colleagues from previous jobs, and we regularly attend game nights and pub quizzes.
+
+I try to keep fit by swimming 2-3 times a week, and I also enjoy all-weather walking trips.
 
 </section>
 

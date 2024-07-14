@@ -34,7 +34,6 @@ function updateStyles(styleName) {
 }
 
 window.addEventListener("message", (e) => {
-  // todo this needs some security, need to make sure it comes from the parent iframe only
   if (typeof e.data === "string") {
     updateStyles(e.data);
   }

@@ -17,7 +17,6 @@ function template(about: AboutProps, version: string): string {
     <link rel="icon" href="assets/favicon.svg?v=${version}" />
 
     <link rel="stylesheet" href="assets/reset.css?v=${version}" />
-    <link rel="stylesheet" href="assets/styles.css?v=${version}" />
     <link id="style_main" rel="stylesheet" href="assets/style-main.css?v=${version}" />
   </head>
   <body>${about.body}</body>
