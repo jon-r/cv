@@ -1,9 +1,8 @@
 const stylesheets = {};
 
-
-
 function appendStylesheet(name) {
-  const existingCss = document.querySelector(`#style_${name}`);
+  const stylesheetId = `#style_${name}`;
+  const existingCss = document.querySelector(stylesheetId);
 
   if (existingCss) {
     return existingCss;
@@ -12,7 +11,7 @@ function appendStylesheet(name) {
   const newCss = document.createElement("link");
   newCss.setAttribute("rel", "stylesheet");
   newCss.setAttribute("href", `assets/style-${name}.css`);
-  newCss.setAttribute("id", `style_${name}`);
+  newCss.setAttribute("id", stylesheetId);
   document.head.appendChild(newCss);
 
   return newCss;
@@ -39,7 +38,9 @@ window.addEventListener("message", (e) => {
   }
 });
 
-updateStyles("main");
+window.addEventListener("load", (e) => {
+  updateStyles("main");
+});
 
 function addSomeJazz(el) {
   if (el.classList.contains("jazzy")) {
@@ -62,7 +63,7 @@ const isReducedMotion =
   window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 
 if (!isReducedMotion) {
-  document
-    .querySelectorAll("h2")
-    .forEach((el) => el.addEventListener("mouseenter", () => addSomeJazz(el)));
+  document.querySelectorAll("h2").forEach((el) => {
+    el.addEventListener("mouseenter", () => addSomeJazz(el));
+  });
 }

@@ -1,42 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200..600&display=swap");
 
 main {
-  max-width: 900px;
-  margin: auto;
-  position: relative;
-  font-family: "Raleway", sans-serif;
-  font-size: 11pt;
-  display: grid;
-  grid-template-columns: 5rem 1fr;
-  grid-auto-flow: column;
-  padding-bottom: 2rem;
-  overflow: hidden;
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 59cm;
-    width: 4.75rem;
-    background-color: var(--bg-lite);
-    z-index: -1;
-  }
-
-  --bg-lite: #f0f8ff;
   --bg: #d4e5f6;
   --emphasis: #06599e;
+  --bg-lite: #f0f8ff;
   --page-margin: 1cm;
+
+  display: grid;
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+  grid-auto-flow: column;
+  grid-template-columns: 5rem 1fr;
+  margin: auto;
+  max-width: 900px;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  position: relative;
+
+  &::after {
+    background-color: var(--bg-lite);
+    content: "";
+    display: block;
+    height: 59cm;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 4.75rem;
+    z-index: -1;
+  }
 }
 
 h1,
 h2 {
-  text-transform: uppercase;
+  color: var(--emphasis);
   font-weight: 200;
   letter-spacing: 0.1rem;
-  color: var(--emphasis);
   line-height: 1;
+  text-transform: uppercase;
 }
 
 a {
@@ -48,21 +48,21 @@ a:not(:hover) {
 }
 
 header {
-  grid-column: 1;
   background-color: var(--bg);
-  padding: var(--page-margin);
+  grid-column: 1;
   height: 10rem;
+  padding: var(--page-margin);
   width: 10rem;
 
   & h1 {
     font-size: 2.5rem;
-    white-space: nowrap;
     margin: 0;
+    white-space: nowrap;
   }
 
   & h3 {
-    margin-top: 0;
     font-size: 1.25rem;
+    margin-top: 0;
   }
 
   & em {
@@ -71,15 +71,16 @@ header {
 }
 
 .contact {
-  grid-column: 2;
   font-size: 0.8rem;
+  font-variant-numeric: lining-nums;
+  grid-column: 2;
   text-align: right;
 
   & ul {
     list-style: none;
     margin: 0;
-    padding-top: var(--page-margin);
     padding-right: var(--page-margin);
+    padding-top: var(--page-margin);
   }
 
   & strong {
@@ -100,8 +101,8 @@ header {
 
   & h2 {
     background-color: var(--bg);
-    padding: 0.5rem 2.5rem;
     margin-left: -2.5rem;
+    padding: 0.5rem 2.5rem;
   }
 
   & h3 {
@@ -109,13 +110,13 @@ header {
   }
 
   & h4 {
+    background-color: var(--bg);
     display: inline-block;
     font-size: 1.1rem;
-    font-weight: 300;
     font-variant-numeric: lining-nums;
-    background-color: var(--bg);
-    padding: 0.125rem 1.5rem;
+    font-weight: 300;
     margin-left: -1.5rem;
+    padding: 0.125rem 1.5rem;
   }
 
   & ul {
@@ -129,12 +130,12 @@ header {
   }
 
   & li {
-    font-weight: 300;
     font-size: 0.8rem;
+    font-weight: 300;
 
     & strong {
-      font-weight: 600;
       font-size: 1.1rem;
+      font-weight: 600;
     }
 
     &::marker {
@@ -144,10 +145,6 @@ header {
 }
 
 @media print {
-  .jobs .page-break {
-    height: 5rem;
-  }
-
   body {
     margin: 0;
   }
@@ -155,11 +152,17 @@ header {
   @page {
     margin: 0 !important;
   }
+
+  .jobs .page-break {
+    height: 5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   main {
     grid-template-columns: 0.5rem 1fr;
+
+    --page-margin: 0.5rem;
 
     &::after {
       display: none;
@@ -168,8 +171,6 @@ header {
     & h1 {
       font-size: 2rem;
     }
-
-    --page-margin: 0.5rem;
   }
 
   .contact {

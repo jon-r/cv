@@ -6,14 +6,17 @@ import { getGitHash } from "./util.ts";
 export const INPUT_PATH = "./raw";
 export const OUTPUT_PATH = "./html";
 
-async function generateWebpage(markdown: string, version: string = String(Date.now())): Promise<string> {
+async function generateWebpage(
+  markdown: string,
+  version: string = String(Date.now()),
+): Promise<string> {
   const about = {
     title: "Jon Richards - Senior Developer / Tech Lead",
     description: "CV for Jon Richards",
     body: await marked.parse(markdown, { gfm: true }),
   };
 
-  const template = (await import('../raw/template.ts')).default;
+  const template = (await import("../raw/template.ts")).default;
 
   return template(about, version);
 }
@@ -37,4 +40,5 @@ export async function updateHtml(version?: string) {
   await Deno.writeTextFile(`${OUTPUT_PATH}/index.html`, formatted);
 }
 
-await updateHtml((await getGitHash()).substring(0, 8));
+const version = (await getGitHash()).substring(0, 8);
+await updateHtml(version);
