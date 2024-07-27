@@ -1,3 +1,6 @@
+import {promisify} from "node:util";
+import {exec} from "node:child_process";
+
 type Callback<Props extends unknown[]> = (...args: Props) => void;
 
 type DebouncedCallback<P extends unknown[]> = Callback<P> & {
@@ -14,7 +17,7 @@ export function debounce<Props extends unknown[]>(
   delay: number,
   { leading }: DebounceOptions = {},
 ): DebouncedCallback<Props> {
-  let timerId: number | undefined;
+  let timerId: NodeJS.Timeout | undefined;
 
   const debounced = (...args: Props) => {
     if (!timerId && leading) {
@@ -31,16 +34,14 @@ export function debounce<Props extends unknown[]>(
   return debounced;
 }
 
-export async function getGitHash(): Promise<string> {
-  const cmd = new Deno.Command("git", {
-    args: ["rev-parse", "HEAD"],
-  });
+const execAsync = promisify(exec);
 
-  const { stdout, stderr } = await cmd.output();
+export async function getGitHash(): Promise<string> {
+  const {stdout, stderr} = await execAsync('git describe --long --always --exclude=* --abbrev=8');
 
   if (stderr.length > 0) {
-    throw new Error(new TextDecoder().decode(stderr));
+    throw new Error(stderr);
   }
 
-  return new TextDecoder().decode(stdout);
+  return stdout;
 }
