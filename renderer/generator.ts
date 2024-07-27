@@ -1,11 +1,13 @@
 import { marked } from "marked";
 import prettier from "prettier";
-import {writeFile, readFile, copyFile, readdir} from "node:fs/promises";
+import {writeFile, readFile, copyFile, readdir, mkdir} from "node:fs/promises";
 
 import { getGitHash } from "./util.ts";
 
 export const INPUT_PATH = "./raw";
-export const OUTPUT_PATH = "./dist";
+export const OUTPUT_PATH = import.meta.env.VITE_OUTPUT || "./html";
+
+await mkdir(`${OUTPUT_PATH}/assets`, { recursive: true });
 
 async function generateWebpage(
   markdown: string,

@@ -6,10 +6,10 @@ phases:
       - npm install
   build:
     commands:
-      - npm test
+      - VITE_OUTPUT="./dist" npm run build
 cache:
   paths:
     - 'node_modules/**/*'
 artifacts:
   files:
-    - '**/*'
+    - 'dist/**/*'
