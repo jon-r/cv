@@ -1,0 +1,20 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Static CV generator",
+  "main": "renderer/generator.ts",
+  "author": "Jon Richards",
+  "license": "ISC",
+  "scripts": {
+    "build": "vite-node renderer/generator.ts",
+    "dev": "vite-node renderer/watcher.ts"
+  },
+  "dependencies": {
+    "marked": "^13.0.2",
+    "prettier": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "vite-node": "^2.0.4"
+  }
+}

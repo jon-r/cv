@@ -1,12 +1,12 @@
-import { INPUT_PATH, OUTPUT_PATH, updateHtml } from "./generator.ts";
-import { debounce } from "./util.ts";
+import { watch } from "node:fs/promises";
 
-await Deno.mkdir(`${OUTPUT_PATH}/assets`, { recursive: true });
+import { INPUT_PATH, updateHtml } from "./generator.ts";
+import { debounce } from "./util.ts";
 
 const debouncedUpdateHtml = debounce(updateHtml, 300);
 
 console.log("watching...");
-const templateWatcher = Deno.watchFs(`${INPUT_PATH}/`);
+const templateWatcher = watch(`${INPUT_PATH}/`);
 
 for await (const _event of templateWatcher) {
   debouncedUpdateHtml();
