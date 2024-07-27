@@ -9,7 +9,7 @@ phases:
       - VITE_OUTPUT="./dist" npm run build
 cache:
   paths:
-    - 'node_modules/**/*'
+    - "node_modules/**/*"
 artifacts:
   files:
-    - 'dist/**/*'
+    - "dist/**/*"

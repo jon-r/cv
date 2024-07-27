@@ -11,10 +11,10 @@
     "isolatedModules": true,
     "noEmit": true,
 
-    /* overwrite strictest ruleset */
+    /* Strict */
     "strict": true,
     "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
+    "noImplicitOverride": true
   },
   "exclude": ["node_modules"]
 }

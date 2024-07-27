@@ -1,6 +1,12 @@
 import { marked } from "marked";
 import prettier from "prettier";
-import {writeFile, readFile, copyFile, readdir, mkdir} from "node:fs/promises";
+import {
+  writeFile,
+  readFile,
+  copyFile,
+  readdir,
+  mkdir,
+} from "node:fs/promises";
 
 import { getGitHash } from "./util.ts";
 
@@ -26,7 +32,7 @@ async function generateWebpage(
 
 export async function updateHtml(version?: string) {
   console.log(`[${Date.now()}] updated!`);
-  const markdown = await readFile(`${INPUT_PATH}/cv.md`, {encoding: 'utf8'});
+  const markdown = await readFile(`${INPUT_PATH}/cv.md`, { encoding: "utf8" });
 
   // todo may need better way to deal with all the css.
   for (const stylesheet of await readdir(`${INPUT_PATH}/assets`)) {

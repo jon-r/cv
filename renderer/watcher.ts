@@ -1,8 +1,7 @@
-import { INPUT_PATH,  updateHtml } from "./generator.ts";
+import { watch } from "node:fs/promises";
+
+import { INPUT_PATH, updateHtml } from "./generator.ts";
 import { debounce } from "./util.ts";
-import {watch} from "node:fs/promises";
-
-
 
 const debouncedUpdateHtml = debounce(updateHtml, 300);
 

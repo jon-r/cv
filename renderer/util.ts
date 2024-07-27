@@ -1,5 +1,5 @@
-import {promisify} from "node:util";
-import {exec} from "node:child_process";
+import { promisify } from "node:util";
+import { exec } from "node:child_process";
 
 type Callback<Props extends unknown[]> = (...args: Props) => void;
 
@@ -37,7 +37,9 @@ export function debounce<Props extends unknown[]>(
 const execAsync = promisify(exec);
 
 export async function getGitHash(): Promise<string> {
-  const {stdout, stderr} = await execAsync('git describe --long --always --exclude=* --abbrev=8');
+  const { stdout, stderr } = await execAsync(
+    "git describe --long --always --exclude=* --abbrev=8",
+  );
 
   if (stderr.length > 0) {
     throw new Error(stderr);
