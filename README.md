@@ -3,7 +3,9 @@
 
 # Jon Richards
 
-### _Senior Web Developer_ _Tech Lead_
+### _Senior Web Developer_
+
+### _Tech Lead_
 
 </header>
 
@@ -18,15 +20,15 @@
 
 <section class="about">
 
-Accomplished and enthusiastic software engineer with over ten years of hands-on development experience. As a
-self-taught developer, I am proactive, adaptable and always ready to learn.
+Accomplished and enthusiastic software engineer with over ten years of hands-on development experience. As a self-taught
+developer, I am proactive, adaptable and always ready to learn.
 
 My experience includes contributing to a variety of commercial applications; from bespoke internal dashboards to full
-enterprise platforms that served hundreds of thousands of active customers.
+enterprise platforms that serve hundreds of thousands of active customers.
 
-Most recently my work has included being the tech lead for mixed discipline teams. I’ve enjoyed both the challenge of
-handling multiple tech operations as well as the mentoring of my junior colleagues. Positive and social team culture is
-important to me, I like to be in office where possible and I enjoy taking part in socials.
+My most recent roles have included being the tech lead for mixed discipline teams. I have enjoyed both the challenge of
+handling multiple tech operations as well as the mentoring of junior colleagues. I like to lead by example and create a
+productive office environment.
 
 </section>
 
@@ -43,7 +45,7 @@ important to me, I like to be in office where possible and I enjoy taking part i
 - **AWS Cloud – 4-5 years,**
   Lambdas, EC2, DynamoDB, CodePipeline, Serverless Applications
 - **CI/CD Practices – 6+ years,**
-  Version Control, Unit/Integration Testing, Pipelines, SonarQube
+  Version Control, Unit/Integration Testing, Pipelines, Jenkins, SonarQube
 - **DevOps & Infrastructure – 3+ years,**
   CDK, Terraform, Architectural Patterns
 
@@ -60,55 +62,58 @@ a wide variety of sources (power, healthcare, rail, demographics) and unifying i
 
 #### 2023-Present – Technical Lead
 
-Managed 15-20 developers to present map data in a performant, highly customisable web app.
+Managing 15-20 developers to present map data in a performant, highly customisable web app.
 
-- Led solution design & development across the product.
-- Guiding frontend team to build a clean, scalable React application.
-- Directing backend team (Python, Java) to optimise API performance.
-- Normalising data from manual and automated entry.
+- Led solution design and development across the product, guiding FE team to build clean, scalable **React** code.
+- Directing BE team (**Java**, **Python**) to optimise API performance & normalise data from mixed sources.
 
 Mentoring 5-10 typescript developers, ranging from bootcamp graduates to senior engineers.
 
-- Training teams to work in a professional environment.
-- Encouraging best development & delivery practices.
-- One-to-one meetings to discuss personal development plans.
-- Creating interactive (chocolate based) demos to make learning fun and memorable.
+- **Training teams** to work in a professional environment. Helped the team complete effective **code reviews**.
+- Encouraging best development & delivery practices. Advised on **branching strategies**, and **CI/CD pipelines**.
+- **Mentoring** and one-to-one meetings to discuss personal development plans.
+- Creating interactive (food based) demos to make learning fun and memorable.
+
+Developing automated strategy to migrate the application for future customers
+
+- Scripted infrastructure as code (**IAC**) pipelines with **Terraform**.
+- Documented **AWS** service architecture including config, AWS build pipelines and third-party integrations.
 
 <div class="page-break" role="presentation"></div>
 
 ### [Sharp Gaming (Betfred)](https://www.betfred.com/) – Enterprise Gambling Platform
 
-Working on a large-scale migration project bringing the Betfred digital system fully in-house. Now fully migrated,
-Betfred maintains tens of thousands of daily customers with a multi-million-pound weekly turnover.
+Working on a large-scale migration project to bring the Betfred digital system fully in-house. Now fully migrated,
+Betfred serves tens of thousands of daily customers with a multi-million-pound weekly turnover.
 
 #### 2021-2023 – Lead Developer
 
 Member of the Centre of Excellence team, working closely with enterprise architects on how to make the most of AWS
 Managed services.
 
-- Research, design, and doc's to add future technologies (AWS, micro-frontends, progressive enhancement).
-- Mentoring/supporting members across multiple projects.
-- AWS Solution Design – Node.js, TypeScript, CDK, ApiGateway, Lambda, S3.
-- CI/CD Implementation for Micro-Frontends – Jenkins, Pact testing, Docker, Webpack Module Federation.
+- Research, design, and documentation for new technologies (**AWS**, **micro-frontends**, **progressive enhancement**).
+- AWS Serverless Solution Design (**Node.js**, **TypeScript**, **CDK**, **ApiGateway**, **CloudFront**, **Lambda**, **S3**).
+- CI/CD Implementation for microservices (**Jenkins**, **SonarQube**, **Pact testing**, **Docker**, 
+  **Module Federation**).
+- Mentoring/supporting team members across ongoing delivery projects.
 
 #### 2019-2021 – Senior Developer
 
 A senior member of the games team, producing a service stack suitable for multiple gaming product requirements (Slots,
 Live Casino, Jackpots, Bingo).
 
-- Complex gambling integrations with bespoke content management. 3rd party APIs, UKGC compliance, Responsible Gambling,
-  KYC.
-- Custom CMS focused on games content – MongoDB, Express, React, Node (MERN stack).
-- Frontend games integrations – React, Redux, REST, UKGC Compliance.
+- Complex gambling integrations with strict requirements. (**UKGC compliance**, **responsible gambling**, **KYC**).
+- Custom CMS focused on games content (**MongoDB**, **Express**, **React**, **Node.js**, **MERN stack**).
+- Frontend games integrations (**React**, **Redux**, **REST**).
 
 #### 2017-2019 – Web Developer
 
 Part of the greenfield team setting up the foundations for a new cross-product platform (Gaming, Sportsbook, Account
 Management, Payment System).
 
-- Future-proof React & Redux architecture.
-- Server-Side React app (custom Express based SSR app).
-- WebSocket for real-time event odds, and Node/SQL data driven sportsbook.
+- Future-proof **React** & **Redux** architecture. Scalable modular codebase with high unit test coverage
+- Server-Side React app (custom **Express based SSR** solution).
+- **WebSocket** for real-time sport events, serving high performance betslip data.
 
 </section>
 
@@ -116,12 +121,9 @@ Management, Payment System).
 
 ## Education
 
-- **University of Bolton – 3D Games Art,**
-  Bachelor of Arts (Hons) First Class
-- **Bay House College – A Levels,**
-  Maths A, Physics B, Graphics C
-- **Bay House Secondary School – GCSE's,**
-  12 A*-C grades including Maths A*, ICT A, Physics A
+- **University of Bolton – 3D Games Art,** Bachelor of Arts (Hons) First Class
+- **Bay House College – A Levels,** Maths A, Physics B, Graphics C
+- **Bay House Secondary School – GCSE's,** 12 A*-C grades including Maths A*, ICT A, Physics A
 
 </section>
 
@@ -129,9 +131,12 @@ Management, Payment System).
 
 ## Interests
 
-In my free time I enjoy playing board and card games with friends. I like to keep in touch with colleagues from previous jobs, and we regularly attend game nights and pub quizzes.
+A positive and social team culture is important to me. I like to regularly work in office where possible, and take part
+in socials.
 
-I try to keep fit by swimming 2-3 times a week, and I also enjoy all-weather walking trips.
+In my free time I enjoy playing board and card games with friends. I like to keep in touch with colleagues from previous
+jobs, and we regularly attend game nights and pub quizzes. I try to keep fit by swimming 2-3 times a week, and I also
+join walking trips.
 
 </section>
 
