@@ -49,5 +49,5 @@ export async function updateHtml(version?: string) {
   await writeFile(`${OUTPUT_PATH}/index.html`, formatted);
 }
 
-const version = (await getGitHash()).substring(0, 8);
+const version = (await getGitHash()).trim();
 await updateHtml(version);

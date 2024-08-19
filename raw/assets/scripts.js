@@ -42,13 +42,16 @@ window.addEventListener("load", (e) => {
   updateStyles("main");
 });
 
+const SOME_JAZZ = "so-jazzy";
+const JAZZ_LIMIT = 1_000;
 function addSomeJazz(el) {
-  if (el.classList.contains("jazzy")) {
+  if (el.classList.contains(SOME_JAZZ)) {
     return;
   }
 
-  // stops confetti spam
-  el.classList.add("jazzy");
+  // limits confetti spam
+  el.classList.add(SOME_JAZZ);
+  setTimeout(() => el.classList.remove(SOME_JAZZ), JAZZ_LIMIT);
 
   const yOffset = el.getBoundingClientRect().top / window.innerHeight;
 
