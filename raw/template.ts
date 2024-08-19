@@ -24,7 +24,7 @@ function template(about: AboutProps, version: string): string {
   <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <script defer src="assets/scripts.js?v=${version}"></script>
   
-  ${process.env.NODE_ENV !== "production" ? "<script>document.body.classList.add('paper')</script>" : ""}
+  ${import.meta.env.VITE_PRINT === "true" ? "<script>document.body.classList.add('paper')</script>" : ""}
 </html>`;
 }
 

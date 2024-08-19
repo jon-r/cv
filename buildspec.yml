@@ -3,7 +3,6 @@ version: 0.2
 env:
   variables:
     VITE_OUTPUT: "./dist"
-    NODE_ENV: "production"
 
 phases:
   install:

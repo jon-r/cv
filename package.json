@@ -7,7 +7,7 @@
   "license": "ISC",
   "scripts": {
     "build": "vite-node renderer/generator.ts",
-    "dev": "vite-node renderer/watcher.ts"
+    "dev": "VITE_PRINT=true vite-node renderer/watcher.ts"
   },
   "dependencies": {
     "marked": "^13.0.2",
