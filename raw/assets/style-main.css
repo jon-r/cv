@@ -113,14 +113,9 @@ header {
 
   & h2 {
     background-color: var(--bg);
-    /*margin: var(--content-margin) 0 0  -2.5rem;*/
     margin-left: -2.5rem;
     padding: 0.5rem 2.5rem;
   }
-
-  /*& h3 {*/
-  /*  font-size: 1.3rem;*/
-  /*}*/
 
   & h4 {
     background-color: var(--bg);

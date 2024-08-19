@@ -6,7 +6,7 @@
   "author": "Jon Richards",
   "license": "ISC",
   "scripts": {
-    "build": "NODE_ENV=production vite-node renderer/generator.ts",
+    "build": "vite-node renderer/generator.ts",
     "dev": "vite-node renderer/watcher.ts"
   },
   "dependencies": {
