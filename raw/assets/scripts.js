@@ -27,9 +27,14 @@ function enableStylesheet(name) {
   });
 }
 
+const TOGGLE_DARK_MODE = "TOGGLE_DARK_MODE";
 function updateStyles(styleName) {
-  stylesheets[styleName] = appendStylesheet(styleName);
-  enableStylesheet(styleName);
+  if (styleName === TOGGLE_DARK_MODE) {
+    document.body.classList.toggle("dark-mode");
+  } else {
+    stylesheets[styleName] = appendStylesheet(styleName);
+    enableStylesheet(styleName);
+  }
 }
 
 window.addEventListener("message", (e) => {

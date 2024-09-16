@@ -1,9 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200..600;1,600&display=swap");
 
-main {
+:root {
+  --base: #fff;
   --bg: #d4e5f6;
   --bg-lite: #f0f8ff;
+  --bg-shadow: #ddd;
   --emphasis: #004177;
+  --text: #000;
+  --subheader: #000;
+}
+
+@media screen {
+  .dark-theme {
+    --base: #101010;
+    --bg: #042240;
+    --bg-lite: #0d375c;
+    --bg-shadow: #000;
+    --emphasis: #efdb6d;
+    --text: #d9d9d9;
+    --subheader: #f3f3f3;
+  }
+}
+
+body {
+  background-color: var(--base);
+  color: var(--text);
+}
+
+main {
   --page-margin: 1cm;
   --content-margin: 1rem;
 
@@ -21,7 +45,11 @@ main {
   padding-bottom: 2rem;
   position: relative;
 
-  &::after {
+  & > * {
+    position: relative;
+  }
+
+  &::before {
     background-color: var(--bg-lite);
     content: "";
     display: block;
@@ -30,7 +58,7 @@ main {
     position: absolute;
     top: 0;
     width: 4.75rem;
-    z-index: -1;
+    /*z-index: -1;*/
   }
 }
 
@@ -41,6 +69,11 @@ h2 {
   letter-spacing: 0.1rem;
   line-height: 1;
   text-transform: uppercase;
+}
+
+h3,
+h4 {
+  color: var(--subheader);
 }
 
 h1 {
@@ -192,7 +225,7 @@ header {
 @media screen {
   .paper {
     & main {
-      box-shadow: 0 0 5px #ddd;
+      box-shadow: 0 0 5px var(--bg-shadow);
 
       /* using printable dimensions, then rems in the inner styles */
       max-width: 21cm;

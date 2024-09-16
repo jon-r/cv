@@ -20,6 +20,7 @@ function template(about: AboutProps, version: string): string {
     <link id="style_main" rel="stylesheet" href="assets/style-main.css?v=${version}" />
   </head>
   <body>${about.body}</body>
+  <script src="assets/script-first.js?v=${version}"></script>
   
   <script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <script defer src="assets/scripts.js?v=${version}"></script>
